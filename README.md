@@ -6,6 +6,9 @@
 2. *data.xlsx*
    * Data bank of scraped applications used for various purposes
 
+3. *levenshtein_distance.js*
+   * Script used to calculate Levenshtein distance and ratio between app titles and app descriptions
+
 **App Store**
 
 1. *app_store_scraper_server.py*
