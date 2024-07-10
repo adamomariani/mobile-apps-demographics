@@ -29,8 +29,8 @@
 
 **Privacy Policy (PP) Parsing**
 
-1. trafilatura_extractor.py
+1. *trafilatura_extractor.py*
    * Script used to retrieve PP text given a PP URL
 
-2. spacy_tokenization.py
+2. *spacy_tokenization.py*
    * Script used to extract relevant paragraphs from PP texts for every data type category
