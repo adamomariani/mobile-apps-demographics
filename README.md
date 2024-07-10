@@ -1,41 +1,51 @@
-*Note: Currently working on bash script to automate the process without the use of an Excel databank or running different scripts*
+# Repository Overview
+This repository contains a collection of scripts for various data scraping and processing tasks. Below is an overview of the scripts and their functionalities, organized by category.
 
-**Generic**
+## Note
+Currently working on a bash script to automate these processes more efficiently.
 
-1. *test_openai_gpt_model.js*
-   * Script to communicate with OpenAI's GPT model. The script retrieves relevant information from the Excel file provided, and using the given system message, it will prompt the indicated GPT model for an answer
-  
-2. *data.xlsx*
-   * Data bank of scraped applications used for various purposes
+## Generic Scripts
+Scripts that serve general purposes across different platforms.
 
-3. *levenshtein_distance.js*
-   * Script used to calculate Levenshtein distance and ratio between app titles and app descriptions
+### 1. **test_openai_gpt_model.js**
+- **Purpose:** Communicates with OpenAI's GPT model to retrieve answers based on input from an Excel file.
 
-**App Store**
+### 2. **data.xlsx**
+- **Purpose:** Data bank containing scraped application data for various uses.
 
-1. *app_store_scraper_server.py*
-   * Flask server with a single endpoint to retrieve an app's store listing privacy information on the app store, given a URL
+### 3. **levenshtein_distance.js**
+- **Purpose:** Calculates the Levenshtein distance and similarity ratio between application titles and descriptions.
 
-2. *targeting_children.js*
-   * Checks whether an application is targeting children or not, based on app title, description, and front page of reviews
-   * Requires *exceljs* and *app-store-scraper*
+## App Store Tools
+Scripts specifically designed for scraping and analyzing data from the App Store.
 
-3. *app_store_scraper*
-   * Uses *app-store-scraper* by Facundo Olano and the developed *app_store_scraper_server.py* to fetch App Store app information
+### 1. **app_store_scraper_server.py**
+- **Purpose:** Flask server that retrieves privacy information from an app's store listing on the App Store.
 
-4. *app_store_scraper_from_gplay*
-   * Uses *app-store-scraper* by Facundo Olano and the developed *app_store_scraper_server.py* to find matching applications on the App Store from those identified on the Play Store
+### 2. **targeting_children.js**
+- **Purpose:** Determines whether an application targets children based on its title, description, and reviews.
+- **Dependencies:** `app-store-scraper` by Facundo Olano
 
-**Google Play**
+### 3. **app_store_scraper**
+- **Purpose:** Fetch information from the App Store.
+- **Dependencies:** `app-store-scraper`, `app_store_scraper_server.py`
 
-1. *gplay_scraper.js*
-   * The scraper used to collect app data from Google Play
-   * Requires *google-play-scraper*
+### 4. **app_store_scraper_from_gplay**
+- **Purpose:** Finds matching applications on the App Store using the identified apps on the Play Store.
+- **Dependencies:** `app-store-scraper`, `app_store_scraper_server.py`
 
-**Privacy Policy (PP) Parsing**
+## Google Play Tools
+Scripts for scraping data from Google Play.
 
-1. *trafilatura_extractor.py*
-   * Script used to retrieve PP text given a PP URL
+### 1. **gplay_scraper.js**
+- **Purpose:** Scrapes application data from Google Play.
+- **Dependencies:** `google-play-scraper`
 
-2. *spacy_tokenization.py*
-   * Script used to extract relevant paragraphs from PP texts for every data type category
+## Privacy Policy Parsing
+Scripts designed for extracting and processing text from privacy policies.
+
+### 1. **trafilatura_extractor.py**
+- **Purpose:** Retrieves the text of a privacy policy from a provided URL.
+
+### 2. **spacy_tokenization.py**
+- **Purpose:** Extracts relevant paragraphs from privacy policy texts according to different data type categories.
