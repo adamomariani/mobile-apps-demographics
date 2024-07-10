@@ -1,3 +1,5 @@
+*Note: Currently working on bash script to automate the process without the use of an Excel databank or running different scripts*
+
 **Generic**
 
 1. *test_openai_gpt_model.js*
