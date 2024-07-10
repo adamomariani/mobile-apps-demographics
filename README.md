@@ -1,9 +1,9 @@
 **Generic**
 
-1. test_openai_gpt_model.js
+1. *test_openai_gpt_model.js*
    * Script to communicate with OpenAI's GPT model. The script retrieves relevant information from the Excel file provided, and using the given system message, it will prompt the indicated GPT model for an answer
   
-2. data.xlsx
+2. *data.xlsx*
    * Data bank of scraped applications used for various purposes
 
 **App Store**
